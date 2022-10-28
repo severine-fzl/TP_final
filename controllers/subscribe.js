@@ -1,6 +1,6 @@
 import UserModel from "../Models/User.js";
 
-export default async function CreateUser (req, res) {
+export default async function CreateUserController (req, res) {
   console.log(req.body)
     const { firstName, lastName, email, password, password_confirm } = req.body;
     const userData = { firstName, lastName, email, password}
